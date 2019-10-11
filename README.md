@@ -49,3 +49,16 @@ When given the start only, calculates TMIN, TAVG, and TMAX for all dates greater
 
 /api/v1.0/<start> and /api/v1.0/<start>/<end>: Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
 When given the start and the end date, calculates the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
+  
+Temperature Analysis:
+calc_temps that will accept a start date and end date in the format %Y-%m-%d and return the minimum, average, and maximum temperatures for that range of dates.
+
+Used the calc_temps function to calculate the min, avg, and max temperatures for your trip using the matching dates from the previous year (i.e., use "2017-01-01" if your trip start date was "2018-01-01").
+
+Ploted the min, avg, and max temperature from your previous query as a bar chart.
+
+Used the average temperature as the bar height.
+
+Used the peak-to-peak (tmax-tmin) value as the y error bar (yerr).
+
+![Trip Average Temp](Instructions/Images/TripAvgTemp.png)
