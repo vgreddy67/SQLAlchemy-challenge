@@ -31,3 +31,21 @@ Ploted the results as a histogram with bins=12.
 
 ![Histogram](Instructions/Images/Station%20Histogram.png)
 
+Step 2 - Climate App
+
+Designed a Flask API based on the queries that have just developed.
+
+Used FLASK to create your routes.
+Routes
+/ : Home page.Lists all routes that are available.
+
+/api/v1.0/precipitation: The query results has been converted to a Dictionary using date as the key and prcp as the value.The JSON representation of the dictionary is returned.
+
+/api/v1.0/stations: Returns a JSON list of stations from the dataset.
+
+/api/v1.0/tobs: query for the dates and temperature observations from a year from the last data point.
+Return a JSON list of Temperature Observations (tobs) for the previous year.
+When given the start only, calculates TMIN, TAVG, and TMAX for all dates greater than and equal to the start date.
+
+/api/v1.0/<start> and /api/v1.0/<start>/<end>: Return a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start or start-end range.
+When given the start and the end date, calculates the TMIN, TAVG, and TMAX for dates between the start and end date inclusive.
