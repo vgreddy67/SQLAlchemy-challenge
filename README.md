@@ -10,4 +10,4 @@ Loaded the query results into a Pandas DataFrame and set the index to the date c
 The DataFrame values are sorted by date.
 
 Ploted the results using the DataFrame plot method.
-![Precipitation]()
+![Precipitation](Instructions/Images/precipitation.png)
