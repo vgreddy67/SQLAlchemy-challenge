@@ -29,5 +29,5 @@ Filtered by the station with the highest number of observations.
 
 Ploted the results as a histogram with bins=12.
 
-![Histogram](Instructions/Images/precipitation.png)
+![Histogram](Instructions/Images/Station%20Histogram.png)
 
