@@ -62,3 +62,18 @@ Used the average temperature as the bar height.
 Used the peak-to-peak (tmax-tmin) value as the y error bar (yerr).
 
 ![Trip Average Temp](Instructions/Images/TripAvgTemp.png)
+
+Daily Rainfall Average:
+
+Calculated the rainfall per weather station using the previous year's matching dates.
+
+Calculated the daily normals. Normals are the averages for the min, avg, and max temperatures.
+daily_normals that will calculate the daily normals for a specific date. This date string will be in the format %m-%d. Used all historic tobs that match that date string.
+
+Created a list of dates for your trip in the format %m-%d. Used the daily_normals function to calculate the normals for each date string and appends the results to a list.
+
+The list of daily normals is loaded into a Pandas DataFrame and set the index equal to the date.
+
+Used Pandas to plot an area plot (stacked=False) for the daily normals.
+![Trip Average Temp](Instructions/Images/Normals.png)
+
